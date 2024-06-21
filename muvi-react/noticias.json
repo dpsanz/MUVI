@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "titulo": "Novo trailer de filme blockbuster lançado",
+        "descricao": "Confira o novo trailer do filme que promete ser um sucesso de bilheteria.",
+        "dataPublicacao": "2023-05-15"
+    },
+    {
+        "id": 2,
+        "titulo": "Diretor famoso anuncia nova produção",
+        "descricao": "Saiba mais sobre a nova produção do renomado diretor, que promete surpreender o público.",
+        "dataPublicacao": "2023-06-01"
+    },
+    {
+        "id": 3,
+        "titulo": "Rumor de elenco para próxima grande franquia",
+        "descricao": "Descubra os rumores sobre o elenco da próxima grande franquia de filmes.",
+        "dataPublicacao": "2023-06-10"
+    },
+    {
+        "id": 4,
+        "titulo": "Filme ganha prêmio internacional",
+        "descricao": "Saiba mais sobre o filme que ganhou destaque em um prestigioso festival internacional de cinema.",
+        "dataPublicacao": "2023-06-20"
+    },
+    {
+        "id": 5,
+        "titulo": "Novo projeto de animação em desenvolvimento",
+        "descricao": "Conheça o novo projeto de animação que está sendo desenvolvido por um grande estúdio.",
+        "dataPublicacao": "2023-06-25"
+    }
+]
