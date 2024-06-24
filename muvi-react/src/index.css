@@ -5,5 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
+::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #115e59;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00b4a8;
+    border-radius:25px;
+  }
+  

@@ -12,18 +12,22 @@ function Filmes() {
     const urlImg = 'https://image.tmdb.org/t/p/w342/';
 
     const fetchMovies = (pageNum) => {
-        fetch(`${urlBase}popular?${apiKey}&page=${pageNum}`)
-            .then(response => response.json())
-            .then(response => {
-                setFilmes(prevFilmes => [...prevFilmes, ...response.results]);
-                setHasMore(response.page < response.total_pages);
-            })
-            .catch(erro => console.log(erro));
-    };
+    console.log(`Fetching page ${pageNum}`);
+    fetch(`${urlBase}popular?${apiKey}&page=${pageNum}`)
+        .then(response => response.json())
+        .then(response => {
+            console.log('Fetched movies:', response.results);
+            setFilmes(prevFilmes => [...prevFilmes, ...response.results]);
+            setHasMore(response.page < response.total_pages);
+        })
+        .catch(erro => console.log(erro));
+};
 
     useEffect(() => {
         fetchMovies(page);
     }, [page]);
+
+
 
     const loadMore = () => {
         setPage(prevPage => prevPage + 1);
@@ -33,20 +37,24 @@ function Filmes() {
         <>
             <main className="bg-black">
                 <div className='flex flex-col items-center'>
-                    <h1 className='text-3xl mt-3 mb-3 tracking-tight text-white bg-clip-text'>
+                    <h1 className='text-3xl mt-3 mb-3 tracking-tight text-teal-500 font-bold bg-clip-text'>
                         FILMES
                     </h1>
+                    
                     <div className='w-full flex justify-center'>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 ">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 mx-10">
                             {filmes.map(filme => (
                                 <div className="card-filme flex flex-col items-center" key={filme.id}>
-                                    <img className="self-center" src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
-                                    <h1 className="text-white text-center mt-2">{filme.title}</h1>
-                                    <Link to={`${filme.id}`} className="text-purple-800 mt-1">Ver Mais</Link>
+                                    <Link to={`${filme.id}`} className="text-teal-800 mt-1 hover:tracking-widest transition-all font-bold">
+                                        <img className="self-center opacity-60 hover:opacity-100 transition-all" src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
+                                    </Link>
+                                    <h1 className="text-white text-center mt-2 font-bold text-2xl">{filme.title}</h1>
+                                    <Link to={`${filme.id}`} className="text-teal-800 mt-1 hover:tracking-widest transition-all font-bold">Ver Mais</Link>
                                 </div>
                             ))}
                         </div>
                     </div>
+
                     {hasMore && (
                         <button 
                             onClick={loadMore} 
