@@ -1,32 +1,32 @@
 [
     {
         "id": 1,
-        "titulo": "Novo trailer de filme blockbuster lançado",
-        "descricao": "Confira o novo trailer do filme que promete ser um sucesso de bilheteria.",
-        "dataPublicacao": "2023-05-15"
+        "titulo": "Donald Sutherland, ator de 'Mash' e 'Jogos Vorazes', morre aos 88 anos",
+        "descricao": "Informação foi confirmada pelo filho do ator, Kiefer Sutherland, nas redes sociais.",
+        "dataPublicacao": "2024-06-21"
     },
     {
         "id": 2,
-        "titulo": "Diretor famoso anuncia nova produção",
-        "descricao": "Saiba mais sobre a nova produção do renomado diretor, que promete surpreender o público.",
-        "dataPublicacao": "2023-06-01"
+        "titulo": "'Divertida Mente 2' amadurece bela história em retorno da Pixar à velha (e boa) forma",
+        "descricao": "Continuação à altura do sucesso de 2015 recupera estúdio, que não lançava algo tão bom desde 'Viva' (2017). Animação estreia nesta quinta-feira (20) nos cinemas brasileiros.",
+        "dataPublicacao": "2024-06-20"
     },
     {
         "id": 3,
-        "titulo": "Rumor de elenco para próxima grande franquia",
-        "descricao": "Descubra os rumores sobre o elenco da próxima grande franquia de filmes.",
-        "dataPublicacao": "2023-06-10"
+        "titulo": "Depois de 25 anos de 'A Bruxa de Blair', atores criticam estúdio e pedem pagamentos retroativos",
+        "descricao": "Heather Donahue, Michael C. Williams e Joshua Leonard dizem que ficaram de fora do sucesso financeiro do filme, um dos maiores projetos independentes da história de Hollywood.",
+        "dataPublicacao": "2024-05-02"
     },
     {
         "id": 4,
-        "titulo": "Filme ganha prêmio internacional",
-        "descricao": "Saiba mais sobre o filme que ganhou destaque em um prestigioso festival internacional de cinema.",
-        "dataPublicacao": "2023-06-20"
+        "titulo": "Taylor Swift não estará em 'Deadpool e Wolverine', diz revista; entenda rumores que colocavam cantora no filme",
+        "descricao": "Fãs da cantora e dos super-heróis especulavam há meses a participação no filme. 'Entertainment Weekly' diz que, apesar de brincadeiras, ela não dará as caras.",
+        "dataPublicacao": "2024-02-30"
     },
     {
         "id": 5,
-        "titulo": "Novo projeto de animação em desenvolvimento",
-        "descricao": "Conheça o novo projeto de animação que está sendo desenvolvido por um grande estúdio.",
-        "dataPublicacao": "2023-06-25"
+        "titulo": "Piada com tapa no novo 'Bad Boys' representa volta de Will Smith ao topo das bilheterias; entenda",
+        "descricao": "Ator fala que atuar com amigo Martin Lawrence foi importante após anos difíceis. Grande hit de 2024, filme bateu bilheteria global de US$ 100 milhões no 1º fim de semana.",
+        "dataPublicacao": "2024-03-15"
     }
 ]

@@ -35,7 +35,7 @@ function Home() {
                                 <Link to={`filmes/${filme.id}`} className="text-teal-800 mt-1 hover:tracking-widest transition-all font-bold">
                                 <img className="self-center opacity-70 hover:opacity-100 transition-all" src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
                                 </Link>
-                                <h1 className="text-xl font-bold text-white text-center mt-2">{filme.title}</h1>
+                                <h1 className="text-xl font-bold text-white text-center mt-2 mb-5">{filme.title}</h1>
                             </div>
                             
                         ))}

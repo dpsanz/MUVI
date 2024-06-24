@@ -4,16 +4,16 @@ function Footer() {
             <div className="pl-5 pr-5 pt-7 pb-7 flex justify-between bg-black text-white border-t-2">
                 <div>
                     <h1>
-                        Copyright © 2024 Daniel Sanchez
+                        Copyright © Daniel Sanchez 2024
                     </h1>
                 </div>
                 <div className="flex">
-                    <h1 className="hover:underline">
+                    <a className="hover:text-teal-600 transition-all font-bold" href="https://instagram.com/_dannnh/">
                         INSTAGRAM
-                    </h1>
-                    <h1 className="ml-2 hover:underline">
+                    </a>
+                    <a className="ml-2 hover:text-teal-600 transition-all font-bold" href="https://github.com/dpsanz">
                         GITHUB
-                    </h1>
+                    </a>
                 </div>
             </div>
         </>

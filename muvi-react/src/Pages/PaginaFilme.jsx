@@ -21,11 +21,15 @@ function PaginaFilme(){
 
     return(
         <>
-        <div className="flex flex-col">
-            <img className="" src= {`${urlImg}${filme.backdrop_path}`} alt="" />
-            <h1 className="text-white text-center" >{filme.title}</h1>
-            <p className="text-white text-center"> {filme.overview}</p>
+        <main className="h-screen w-full bg-cover" style={{ backgroundImage: `url(${urlImg}${filme.backdrop_path})` }}>
+
+        
+        <div className="flex flex-col h-screen w-full justify-center backdrop-blur-lg">
+        <h1 className="text-white text-4xl text-center" >{filme.title}</h1>
+        <img className="self-center hover:h-96 transition-all h-80 m-10" src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
+            <p className="text-white text-xl text-justify px-40 drop-shadow-2xl"> {filme.overview}</p>
         </div>
+        </main>
         </>
         
 
