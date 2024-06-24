@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 function Filmes() {
     const [filmes, setFilmes] = useState([]);
-    const [page, setPage] = useState(1);
-    const [hasMore, setHasMore] = useState(true);
+    const [page] = useState(1);
 
     const apiKey = 'api_key=7c572a9f5b3ba776080330d23bb76e1e';
     const urlBase = 'https://api.themoviedb.org/3/movie/';
@@ -18,7 +17,6 @@ function Filmes() {
         .then(response => {
             console.log('Fetched movies:', response.results);
             setFilmes(prevFilmes => [...prevFilmes, ...response.results]);
-            setHasMore(response.page < response.total_pages);
         })
         .catch(erro => console.log(erro));
 };
@@ -27,11 +25,6 @@ function Filmes() {
         fetchMovies(page);
     }, [page]);
 
-
-
-    const loadMore = () => {
-        setPage(prevPage => prevPage + 1);
-    };
 
     return (
         <>
@@ -43,7 +36,7 @@ function Filmes() {
                     
                     <div className='w-full flex justify-center'>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 mx-10">
-                            {filmes.map(filme => (
+                            {filmes.slice(0,20).map(filme => (
                                 <div className="card-filme flex flex-col items-center" key={filme.id}>
                                     <Link to={`${filme.id}`} className="text-teal-800 mt-1 hover:tracking-widest transition-all font-bold">
                                         <img className="self-center opacity-60 hover:opacity-100 transition-all" src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
@@ -54,15 +47,6 @@ function Filmes() {
                             ))}
                         </div>
                     </div>
-
-                    {hasMore && (
-                        <button 
-                            onClick={loadMore} 
-                            className="mt-4 py-2 px-4 text-white hover:underline"
-                        >
-                            Carregar Mais
-                        </button>
-                    )}
                 </div>
             </main>
         </>
